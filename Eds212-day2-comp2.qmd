@@ -26,3 +26,17 @@ dfdy = D(fxyz, 'y')
 
 dfdy
 ```
+
+## Penguins Plot
+
+```{r}
+ggplot() +
+   geom_point(data = penguins, 
+              aes(x = flipper_length_mm, 
+                  y = body_mass_g)) + 
+  
+  labs(x = "Flipper Length (mm)", 
+       y = "Body Mass (g)",
+       title = "Palmer Penguins Body Dimensions") +
+  theme_minimal()
+```
