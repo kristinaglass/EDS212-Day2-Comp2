@@ -1,0 +1,7 @@
+---
+title: "EDS212-Day2-Comp2"
+format: html
+editor: visual
+---
+
+## 
