@@ -4,4 +4,25 @@ format: html
 editor: visual
 ---
 
-## 
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Plotting functions in GGPlot2
+
+```{r}
+fx = function(x) {3 * x^2 + 4}
+
+ggplot( data.frame(x = c(1, 100)), aes(x = x)) + geom_function(fun = fx)
+```
+
+## Partial Derivative 
+
+```{r}
+fxyz = expression(2 * x * y + 3 * (x ^ 2) * (z ^ 3))
+
+dfdy = D(fxyz, 'y')
+
+dfdy
+```
